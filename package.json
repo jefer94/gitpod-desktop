@@ -3,5 +3,7 @@
   "dependencies": {
     "electron": "^15.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "electron-builder": "^22.11.7"
+  }
 }
