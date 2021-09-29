@@ -1,7 +1,11 @@
 {
   "name": "gitpod-desktop",
   "version": "1.0.0",
+  "description": "Desktop integration to Gitpod",
+  "repository": "https://github.com/jefer94/gitpod-desktop.git",
+  "author": "jefer94 <jdefreitaspinto@gmail.com>",
   "main": "main.js",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "electron": "^15.0.0",
