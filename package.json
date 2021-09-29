@@ -1,9 +1,8 @@
 {
   "main": "main.js",
-  "dependencies": {
-    "electron": "^15.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "electron": "^15.0.0",
     "electron-builder": "^22.11.7"
   }
 }
