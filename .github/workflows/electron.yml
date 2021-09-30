@@ -19,6 +19,10 @@ jobs:
         with:
           node-version: 16
 
+      - name: Install dependencies
+        run: |
+          yarn install --dev
+
       - name: Build in Mac
         if: matrix.os == 'macos-latest'
         run: |
