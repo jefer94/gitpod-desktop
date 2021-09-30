@@ -19,6 +19,21 @@ jobs:
         with:
           node-version: 16
 
+      - name: Build in Mac
+        if: matrix.os == 'macos-latest'
+        run: |
+          yarn electron-builder --mac
+
+      - name: Build in Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          yarn electron-builder --linux
+
+      - name: Build in Windows
+        if: matrix.os == 'windows-latest'
+        run: |
+          yarn electron-builder --windows
+
       - name: Git checkout
         # if: matrix.os == 'Netlify' && github.event.check_suite.conclusion == 'success'
         run: |
