@@ -28,21 +28,21 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.github_token }}
         run: |
-          yarn electron-builder --mac
+          yarn electron-builder --mac --publish always
 
       - name: Build in Linux
         if: matrix.os == 'ubuntu-latest'
         env:
           GH_TOKEN: ${{ secrets.github_token }}
         run: |
-          yarn electron-builder --linux
+          yarn electron-builder --linux --publish always
 
       - name: Build in Windows
         if: matrix.os == 'windows-latest'
         env:
           GH_TOKEN: ${{ secrets.github_token }}
         run: |
-          yarn electron-builder --windows
+          yarn electron-builder --windows --publish always
 
       - name: Git checkout
         # if: matrix.os == 'Netlify' && github.event.check_suite.conclusion == 'success'
