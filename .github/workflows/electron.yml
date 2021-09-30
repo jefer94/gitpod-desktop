@@ -23,7 +23,8 @@ jobs:
         # if: matrix.os == 'Netlify' && github.event.check_suite.conclusion == 'success'
         run: |
           # yarn electron-builder
-          gh --help
+          # gh --help
+          ls dist
 
       # - name: Build/release Electron app
       #   uses: samuelmeuli/action-electron-builder@v1
